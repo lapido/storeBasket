@@ -1,11 +1,14 @@
-package com.company.Employee;
+package com.company.model.UserModel.employee;
 
-public class Cashier extends UserEmployee {
+import com.company.model.UserModel.User;
+
+public class Cashier extends User {
     private double loginTime;
     private double logoutTime;
 
-    public Cashier (String name, String surname, int password, String address, int phoneNumber, String userName, int internalPhoneNumber, double loginTime, double logoutTime) {
-        super(name, surname, password, address, phoneNumber, userName, internalPhoneNumber);
+    public Cashier (int id, String name, String surname, int password, String address, int phoneNumber, String userName,
+                    int internalPhoneNumber, double loginTime, double logoutTime) {
+        super(id, name, surname, password, address, phoneNumber, userName, internalPhoneNumber);
         this.loginTime = loginTime;
         this.logoutTime = logoutTime;
     }

@@ -1,6 +1,6 @@
 package com.company;
 
-import com.company.StoreBasket.StoreBasket;
+import com.company.model.StoreBasket.StoreBasket;
 
 import java.util.Collections;
 import java.util.Scanner;

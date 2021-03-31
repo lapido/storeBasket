@@ -1,10 +1,11 @@
-package com.company.StoreBasket;
+package com.company.model.StoreBasket;
 
 
-import java.util.ArrayList;
+import com.company.model.item.Item;
+
 import java.util.List;
 
-public class StoreBasket extends Item{
+public class StoreBasket extends Item {
     private List<Integer> userBonus;
     //private int euroSpent;
 

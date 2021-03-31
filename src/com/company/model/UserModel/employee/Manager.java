@@ -1,10 +1,12 @@
-package com.company.Employee;
+package com.company.model.UserModel.employee;
 
-public class Manager extends UserEmployee {
+import com.company.model.UserModel.User;
+
+public class Manager extends User {
     private int pin;
 
-    public Manager (String name, String surname, int password, String address, int phoneNumber, String userName, int internalPhoneNumber, int pin) {
-        super(name, surname, password, address, phoneNumber, userName, internalPhoneNumber);
+    public Manager (int id, String name, String surname, int password, String address, int phoneNumber, String userName, int internalPhoneNumber, int pin) {
+        super(id, name, surname, password, address, phoneNumber, userName, internalPhoneNumber);
         this.pin = pin;
     }
 

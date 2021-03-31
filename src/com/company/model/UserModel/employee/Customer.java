@@ -1,4 +1,4 @@
-package com.company.User;
+package com.company.model.UserModel.employee;
 
 public class Customer{
    private String simpleCustomer;

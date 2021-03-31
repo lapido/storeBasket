@@ -1,6 +1,7 @@
-package com.company.Employee;
+package com.company.model.UserModel;
 
-public class UserEmployee {
+public class User {
+    private int id;
     private String name;
     private String surname;
     private int password;
@@ -9,7 +10,9 @@ public class UserEmployee {
     private String userName;
     private int internalPhoneNumber;
 
-    public UserEmployee (String name, String surname, int password, String address, int phoneNumber, String userName, int internalPhoneNumber) {
+    public User(int id, String name, String surname, int password, String address,
+                int phoneNumber, String userName, int internalPhoneNumber) {
+        this.id = id;
         this.name = name;
         this.surname = surname;
         this.password = password;
@@ -19,8 +22,16 @@ public class UserEmployee {
         this.internalPhoneNumber = internalPhoneNumber;
     }
 
-    public UserEmployee () {
+    public User() {
 
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName () {
